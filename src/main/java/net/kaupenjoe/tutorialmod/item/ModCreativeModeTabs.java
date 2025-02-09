@@ -80,8 +80,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_DOOR);
                         output.accept(ModBlocks.BISMUTH_TRAPDOOR);
 
-//                        output.accept(ModBlocks.BISMUTH_LAMP);
-//
+                        output.accept(ModBlocks.BISMUTH_LAMP);
+
 //                        output.accept(ModBlocks.BLOODWOOD_LOG.get());
 //                        output.accept(ModBlocks.BLOODWOOD_WOOD.get());
 //                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
