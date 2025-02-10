@@ -54,12 +54,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.BISMUTH_WALL, ModBlocks.BISMUTH_BLOCK);
 
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
-//
-//        handheldItem(ModItems.BISMUTH_SWORD);
-//        handheldItem(ModItems.BISMUTH_PICKAXE);
-//        handheldItem(ModItems.BISMUTH_SHOVEL);
-//        handheldItem(ModItems.BISMUTH_AXE);
-//        handheldItem(ModItems.BISMUTH_HOE);
+
+        handheldItem(ModItems.BISMUTH_SWORD);
+        handheldItem(ModItems.BISMUTH_PICKAXE);
+        handheldItem(ModItems.BISMUTH_SHOVEL);
+        handheldItem(ModItems.BISMUTH_AXE);
+        handheldItem(ModItems.BISMUTH_HOE);
 //        handheldItem(ModItems.BISMUTH_HAMMER);
 //
 //        trimmedArmorItem(ModItems.BISMUTH_HELMET);

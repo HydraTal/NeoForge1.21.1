@@ -4,6 +4,18 @@
   "item.tutorialmod.chisel": "Chisel Tool",
   "item.tutorialmod.radish": "Radish",
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
+  "item.tutorialmod.frostfire_ice": "Frostfire Ice",
+
+
+
+  "item.tutorialmod.bismuth_sword": "Bismuth Sword",
+  "item.tutorialmod.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.tutorialmod.bismuth_shovel": "Bismuth Shovel",
+  "item.tutorialmod.bismuth_axe": "Bismuth Axe",
+  "item.tutorialmod.bismuth_hoe": "Bismuth Hoe",
+
+
+
 
   "block.tutorialmod.bismuth_block": "Block of Bismuth",
   "block.tutorialmod.bismuth_ore": "Bismuth Ore",
@@ -16,5 +28,5 @@
   "tooltip.tutorialmod.magicblock.tooltip": "Magic Block Make",
   "tooltip.tutorialmod.chisel.shift_up": "Press Shift to Find out More",
   "tooltip.tutorialmod.chisel.shift_down": "This Chisel Tool turns blocks into other blocks",
-  "tooltip.tutorialmod.Radish.tooltip": "Just a Normal Radish"
+  "tooltip.tutorialmod.radish.tooltip": "Just a Normal Radish"
 }

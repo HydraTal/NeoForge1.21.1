@@ -30,16 +30,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.STICK)
                 .add(Items.COMPASS);
 
-//        tag(ItemTags.SWORDS)
-//                .add(ModItems.BISMUTH_SWORD.get());
-//        tag(ItemTags.PICKAXES)
-//                .add(ModItems.BISMUTH_PICKAXE.get());
-//        tag(ItemTags.SHOVELS)
-//                .add(ModItems.BISMUTH_SHOVEL.get());
-//        tag(ItemTags.AXES)
-//                .add(ModItems.BISMUTH_AXE.get());
-//        tag(ItemTags.HOES)
-//                .add(ModItems.BISMUTH_HOE.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.BISMUTH_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.BISMUTH_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.BISMUTH_SHOVEL.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.BISMUTH_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.BISMUTH_HOE.get());
 //
 //        this.tag(ItemTags.TRIMMABLE_ARMOR)
 //                .add(ModItems.BISMUTH_HELMET.get())
