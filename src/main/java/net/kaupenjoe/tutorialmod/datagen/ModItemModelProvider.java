@@ -72,9 +72,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
-//        basicItem(ModItems.RADISH_SEEDS.get());
-//        basicItem(ModItems.GOJI_BERRIES.get());
-//
+        basicItem(ModItems.RADISH_SEEDS.get());
+        basicItem(ModItems.GOJI_BERRIES.get());
+
 //        saplingItem(ModBlocks.BLOODWOOD_SAPLING);
 //
 //        withExistingParent(ModItems.GECKO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));

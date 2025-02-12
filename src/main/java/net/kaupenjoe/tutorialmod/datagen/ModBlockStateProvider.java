@@ -6,6 +6,8 @@ import net.kaupenjoe.tutorialmod.block.custom.BismuthLampBlock;
 //import net.kaupenjoe.tutorialmod.block.custom.GojiBerryBushBlock;
 //import net.kaupenjoe.tutorialmod.block.custom.RadishCropBlock;
 import net.kaupenjoe.tutorialmod.block.custom.BismuthLampBlock;
+import net.kaupenjoe.tutorialmod.block.custom.GojiBerryBushBlock;
+import net.kaupenjoe.tutorialmod.block.custom.RadishCropBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -57,9 +59,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         customLamp();
 
-//        makeCrop(((CropBlock) ModBlocks.RADISH_CROP.get()), "radish_crop_stage", "radish_crop_stage");
-//        makeBush(((SweetBerryBushBlock) ModBlocks.GOJI_BERRY_BUSH.get()), "goji_berry_bush_stage", "goji_berry_bush_stage");
-//
+        makeCrop(((CropBlock) ModBlocks.RADISH_CROP.get()), "radish_crop_stage", "radish_crop_stage");
+        makeBush(((SweetBerryBushBlock) ModBlocks.GOJI_BERRY_BUSH.get()), "goji_berry_bush_stage", "goji_berry_bush_stage");
+
 //        blockWithItem(ModBlocks.BISMUTH_END_ORE);
 //        blockWithItem(ModBlocks.BISMUTH_NETHER_ORE);
 //
@@ -91,34 +93,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-//    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
-//        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
-//
-//        getVariantBuilder(block).forAllStates(function);
-//    }
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
 
-//    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
-//        ConfiguredModel[] models = new ConfiguredModel[1];
-//        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(GojiBerryBushBlock.AGE),
-//                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(GojiBerryBushBlock.AGE))).renderType("cutout"));
-//
-//        return models;
-//    }
-//
-//    public void makeCrop(CropBlock block, String modelName, String textureName) {
-//        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
-//
-//        getVariantBuilder(block).forAllStates(function);
-//    }
-//
-//    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
-//        ConfiguredModel[] models = new ConfiguredModel[1];
-//        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((RadishCropBlock) block).getAgeProperty()),
-//                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((RadishCropBlock) block).getAgeProperty()))).renderType("cutout"));
-//
-//        return models;
-//    }
-//
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(GojiBerryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(GojiBerryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((RadishCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((RadishCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
     private void customLamp() {
         getVariantBuilder(ModBlocks.BISMUTH_LAMP.get()).forAllStates(state -> {
             if(state.getValue(BismuthLampBlock.CLICKED)) {

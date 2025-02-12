@@ -22,7 +22,7 @@ public class ModDataMapProvider extends DataMapProvider {
                 .add(ModItems.FROSTFIRE_ICE.getId(), new FurnaceFuel(2400), false);
 
         this.builder(NeoForgeDataMaps.COMPOSTABLES)
-                //.add(ModItems.RADISH_SEEDS.getId(), new Compostable(0.25f), false)
+                .add(ModItems.RADISH_SEEDS.getId(), new Compostable(0.25f), false)
                 .add(ModItems.RADISH.getId(), new Compostable(0.45f), false);
     }
 }
