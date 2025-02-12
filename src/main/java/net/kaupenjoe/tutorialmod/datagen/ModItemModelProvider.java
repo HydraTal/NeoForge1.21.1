@@ -17,6 +17,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.kaupenjoe.tutorialmod.item.ModItems;
 
 import java.util.LinkedHashMap;
 
@@ -60,15 +61,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BISMUTH_SHOVEL);
         handheldItem(ModItems.BISMUTH_AXE);
         handheldItem(ModItems.BISMUTH_HOE);
-//        handheldItem(ModItems.BISMUTH_HAMMER);
-//
-//        trimmedArmorItem(ModItems.BISMUTH_HELMET);
-//        trimmedArmorItem(ModItems.BISMUTH_CHESTPLATE);
-//        trimmedArmorItem(ModItems.BISMUTH_LEGGINGS);
-//        trimmedArmorItem(ModItems.BISMUTH_BOOTS);
-//
-//        basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
-//        basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+        handheldItem(ModItems.BISMUTH_HAMMER);
+
+        trimmedArmorItem(ModItems.BISMUTH_HELMET);
+        trimmedArmorItem(ModItems.BISMUTH_CHESTPLATE);
+        trimmedArmorItem(ModItems.BISMUTH_LEGGINGS);
+        trimmedArmorItem(ModItems.BISMUTH_BOOTS);
+
+        basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
+        basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 //        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 //
 //        basicItem(ModItems.RADISH_SEEDS.get());

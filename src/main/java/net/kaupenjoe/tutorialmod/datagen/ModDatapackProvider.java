@@ -2,8 +2,8 @@ package net.kaupenjoe.tutorialmod.datagen;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
 //import net.kaupenjoe.tutorialmod.enchantment.ModEnchantments;
-//import net.kaupenjoe.tutorialmod.trim.ModTrimMaterials;
-//import net.kaupenjoe.tutorialmod.trim.ModTrimPatterns;
+import net.kaupenjoe.tutorialmod.trim.ModTrimMaterials;
+import net.kaupenjoe.tutorialmod.trim.ModTrimPatterns;
 //import net.kaupenjoe.tutorialmod.worldgen.ModBiomeModifiers;
 //import net.kaupenjoe.tutorialmod.worldgen.ModConfiguredFeatures;
 //import net.kaupenjoe.tutorialmod.worldgen.ModPlacedFeatures;
@@ -18,9 +18,9 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
-    public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder();
-//            .add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap)
-//            .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap)
+    public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
+            .add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap)
+            .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 //            .add(Registries.ENCHANTMENT, ModEnchantments::bootstrap)
 //
 //            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
