@@ -6,6 +6,7 @@ import net.kaupenjoe.tutorialmod.item.custom.ChiselItem;
 import net.kaupenjoe.tutorialmod.item.custom.FuelItem;
 import net.kaupenjoe.tutorialmod.item.custom.HammerItem;
 import net.kaupenjoe.tutorialmod.item.custom.ModArmorItem;
+import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -84,9 +85,9 @@ public class ModItems {
     public static final DeferredItem<Item> KAUPEN_BOW = ITEMS.register("kaupen_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
 
-//    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
-//            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
-//
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
 //    public static final DeferredItem<Item> RADISH_SEEDS = ITEMS.register("radish_seeds",
 //            () -> new ItemNameBlockItem(ModBlocks.RADISH_CROP.get(), new Item.Properties()));
 //

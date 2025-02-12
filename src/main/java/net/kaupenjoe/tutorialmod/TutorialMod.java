@@ -2,8 +2,12 @@ package net.kaupenjoe.tutorialmod;
 
 import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.component.ModDataComponents;
+import net.kaupenjoe.tutorialmod.effect.ModEffects;
+import net.kaupenjoe.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.kaupenjoe.tutorialmod.item.ModCreativeModeTabs;
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kaupenjoe.tutorialmod.potion.ModPotions;
+import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.kaupenjoe.tutorialmod.util.ModItemProperties;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -48,12 +52,12 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
-//        ModSounds.register(modEventBus);
-//
-//        ModEffects.register(modEventBus);
-//        ModPotions.register(modEventBus);
-//
-//        ModEnchantmentEffects.register(modEventBus);
+        ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 //        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
