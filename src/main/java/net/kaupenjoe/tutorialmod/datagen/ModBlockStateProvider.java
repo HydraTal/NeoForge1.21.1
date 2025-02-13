@@ -64,21 +64,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.BISMUTH_END_ORE);
         blockWithItem(ModBlocks.BISMUTH_NETHER_ORE);
-//
-//        logBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_LOG.get()));
-//        axisBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_WOOD.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()));
-//        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
-//        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_WOOD.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
-//
-//        blockItem(ModBlocks.BLOODWOOD_LOG);
-//        blockItem(ModBlocks.BLOODWOOD_WOOD);
-//        blockItem(ModBlocks.STRIPPED_BLOODWOOD_LOG);
-//        blockItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
-//
-//        blockWithItem(ModBlocks.BLOODWOOD_PLANKS);
-//
-//        leavesBlock(ModBlocks.BLOODWOOD_LEAVES);
-//        saplingBlock(ModBlocks.BLOODWOOD_SAPLING);
+
+        logBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_WOOD.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_WOOD.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+
+        blockItem(ModBlocks.BLOODWOOD_LOG);
+        blockItem(ModBlocks.BLOODWOOD_WOOD);
+        blockItem(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+        blockItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+
+        blockWithItem(ModBlocks.BLOODWOOD_PLANKS);
+
+        leavesBlock(ModBlocks.BLOODWOOD_LEAVES);
+        saplingBlock(ModBlocks.BLOODWOOD_SAPLING);
 
     }
 

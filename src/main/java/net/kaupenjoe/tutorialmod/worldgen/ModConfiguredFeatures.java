@@ -51,16 +51,17 @@ public class ModConfiguredFeatures {
                 ModBlocks.BISMUTH_NETHER_ORE.get().defaultBlockState(), 9));
         register(context, END_BISMUTH_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
                 ModBlocks.BISMUTH_END_ORE.get().defaultBlockState(), 9));
-//
-//
-//        register(context, BLOODWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-//                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LOG.get()),
-//                new ForkingTrunkPlacer(4, 4, 3),
-//
-//                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LEAVES.get()),
-//                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 3),
-//
-//                new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.NETHERRACK)).build());
+
+
+        register(context, BLOODWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LOG.get()),
+                new ForkingTrunkPlacer(4, 4, 3),
+
+                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 3),
+
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+//              new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.NETHERRACK)).build());
 
         register(context, GOJI_BERRY_BUSH_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
