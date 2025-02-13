@@ -1,13 +1,12 @@
 package net.kaupenjoe.tutorialmod.datagen;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
-//import net.kaupenjoe.tutorialmod.enchantment.ModEnchantments;
 import net.kaupenjoe.tutorialmod.enchantment.ModEnchantments;
 import net.kaupenjoe.tutorialmod.trim.ModTrimMaterials;
 import net.kaupenjoe.tutorialmod.trim.ModTrimPatterns;
-//import net.kaupenjoe.tutorialmod.worldgen.ModBiomeModifiers;
-//import net.kaupenjoe.tutorialmod.worldgen.ModConfiguredFeatures;
-//import net.kaupenjoe.tutorialmod.worldgen.ModPlacedFeatures;
+import net.kaupenjoe.tutorialmod.worldgen.ModBiomeModifiers;
+import net.kaupenjoe.tutorialmod.worldgen.ModConfiguredFeatures;
+import net.kaupenjoe.tutorialmod.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -24,9 +23,9 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap)
             .add(Registries.ENCHANTMENT, ModEnchantments::bootstrap)
 
-//            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
-//            .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-//            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
+            .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
             ;
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
