@@ -4,6 +4,8 @@ import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.component.ModDataComponents;
 import net.kaupenjoe.tutorialmod.effect.ModEffects;
 import net.kaupenjoe.tutorialmod.enchantment.ModEnchantmentEffects;
+import net.kaupenjoe.tutorialmod.entity.ModEntities;
+import net.kaupenjoe.tutorialmod.entity.client.GeckoRenderer;
 import net.kaupenjoe.tutorialmod.item.ModCreativeModeTabs;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.potion.ModPotions;
@@ -47,7 +49,6 @@ public class TutorialMod {
 
         ModCreativeModeTabs.register(modEventBus);
 
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -58,7 +59,7 @@ public class TutorialMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
-//        ModEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -89,14 +90,14 @@ public class TutorialMod {
 
     }
 
-//    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
+    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
-//
-//            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
         }
     }
 }
