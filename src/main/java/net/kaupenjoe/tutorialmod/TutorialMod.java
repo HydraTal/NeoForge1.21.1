@@ -13,6 +13,7 @@ import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.kaupenjoe.tutorialmod.sound.ModSounds;
 import net.kaupenjoe.tutorialmod.util.ModItemProperties;
+import net.kaupenjoe.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
@@ -64,7 +65,7 @@ public class TutorialMod {
         ModEnchantmentEffects.register(modEventBus);
         ModEntities.register(modEventBus);
 
-//        ModVillagers.register(modEventBus);
+        ModVillagers.register(modEventBus);
 //        ModParticles.register(modEventBus);
 //
 //        ModLootModifiers.register(modEventBus);
