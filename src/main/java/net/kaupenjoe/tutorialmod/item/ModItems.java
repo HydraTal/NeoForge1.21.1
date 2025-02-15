@@ -54,7 +54,7 @@ public class ModItems {
                     .attributes(AxeItem.createAttributes(ModToolTiers.BISMUTH, 6.0F, -3.2f))));
     public static final DeferredItem<HoeItem> BISMUTH_HOE = ITEMS.register("bismuth_hoe",
             () -> new HoeItem(ModToolTiers.BISMUTH, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH, 0F,-3.0f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH, 0F, -3.0f))));
 
     public static final DeferredItem<HammerItem> BISMUTH_HAMMER = ITEMS.register("bismuth_hammer",
             () -> new HammerItem(ModToolTiers.BISMUTH, new Item.Properties()
@@ -95,8 +95,13 @@ public class ModItems {
     public static final DeferredItem<Item> GECKO_SPAWN_EGG = ITEMS.register("gecko_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.GECKO, 0x31afaf, 0xffac00,
                     new Item.Properties()));
+
     public static final DeferredItem<Item> TOMAHAWK = ITEMS.register("tomahawk",
             () -> new TomahawkItem(new Item.Properties().stacksTo(16)));
+
+//    public static final DeferredItem<Item> RADIATION_STAFF = ITEMS.register("radiation_staff",
+//            () -> new Item(new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
